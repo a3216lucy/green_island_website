@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding:0;
+}
+.whole{
+    background-color: #607766;
+}
+.fixed{
+    width:1000px;
+    margin-left:auto;
+    margin-right:auto;  
+}
+.page-header{
+    width:100%;
+    min-width:auto;
+}
+.page-header{
+    opacity:0.9;
+    z-index: 30;
+    position: fixed;
+    top:-35;
+    -webkit-transition: top 0.25s;
+    transition: top 0.25s;
+}
+.page-header-clone > .nav{
+    margin: auto;
+}
+.page-header-clone.visible{
+    top:0;
+}
+.page-header-clone:hover{
+    opacity: 1;
+
+}
+.nav{
+    width:1201px;
+    height:50px;
+    background: #C4C4C4;
+    position:absolute;
+}
+.page-header > .nav{
+    margin:auto;   
+}
+
+.menu ul, .menu li {
+    margin: 0;
+    padding: 0;
+}
+.menu ul {
+    float: right;
+    background:#C4C4C4;
+    list-style: none;
+}
+.menu li {
+    float: left;
+    position: relative;
+    width:auto;
+
+}
+.menu a {
+    background: #C4C4C4;
+    color: #FFFFFF;
+    display: block;
+    font: bold 13px/20px Open Sans,Noto Sans CJK TC thin,sans-serif;
+    letter-spacing:1.5px;
+    padding: 15px 10px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+.menu li:hover a {
+    background: #607766;
+    opacity:70%;
+}
+
+.introduction{
+    font-family:'Goldin Light','Noto Sans CJK TC';
+    width:200px;
+    font-size: 30px;
+    height:30px;
+    margin-left:435px;
+    padding-top:100px;
+    color: white;
+}
+.p1{
+    font-size: 20px;
+}
+.p2{
+    font-size: 17px;
+}
+.texttext{
+    font-family:'Noto Sans CJK TC';
+    letter-spacing: 10px;
+    line-height:30px;
+    color: white;
+    float:left;
+}
+.text_outer{
+    margin-top:-325px;
+    position: absolute;
+    padding-left:600px;
+    padding-top:-110px;
+    margin-left:-40px;
+}
+.section2{
+    margin-top: -250px;
+    background-color: #CECEB9;
+    height:400px;
+}
+.footer{
+    display:block;
+    background-color:#C4C4C4;
+    width:auto;
+    height:25px;
+    opacity:70%;
+}
+.footer_text{
+    font-family:'Ubuntu','Rubik',sans-serif;
+    padding-top:6px;
+    font-size:12px;
+    text-align: center;
+    color:white;
+}
