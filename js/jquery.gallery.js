@@ -1,12 +1,3 @@
-/**
- * jquery.gallery.js
- * http://www.codrops.com
- *
- * Copyright 2011, Pedro Botelho / Codrops
- * Free to use under the MIT license.
- *
- * Date: Mon Jan 30 2012
- */
 
 (function( $, undefined ) {
 	
@@ -521,18 +512,3 @@
 	
 })( jQuery );
 
-//
-// $.each($.Gallery, function(index) {
-//    var $button = $('<a class="dg-prev">&bull;</a>');
-//    
-//    if (index === currentIndex) {
-//      $button.addClass('active');
-//    }
-//    $button.on('click', function() {
-//      move(index);
-//    }).appendTo('.dg-next');
-//    bulletArray.push($button);
-//  });
-//  
-//  advance();
-//});
