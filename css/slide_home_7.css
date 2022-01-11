@@ -36,26 +36,26 @@ html, body {
 }
 
 .slide7:nth-of-type(1) {
-    background-image:url("/img/20180819-IMG_2885.jpg");
+    background-image:url("/green_island_website//img/20180819-IMG_2885.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .slide7:nth-of-type(2) {
-    background-image:url("/img/20180819-IMG_2881.jpg");
+    background-image:url("/green_island_website//img/20180819-IMG_2881.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .slide7:nth-of-type(3) {
-    background-image:url("/img/20180819-IMG_2880.jpg");
+    background-image:url("/green_island_website//img/20180819-IMG_2880.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .slide7:nth-of-type(4) {
-    background-image:url("/img/20180819-IMG_2874.jpg");
+    background-image:url("/green_island_website//img/20180819-IMG_2874.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
