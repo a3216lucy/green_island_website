@@ -4,23 +4,23 @@
 	/*
 	 * Gallery object.
 	 */
-	$.Gallery 				= function( options, element ) {
+	$.Gallery = function( options, element ) {
 	
-		this.$el	= $( element );
+		this.$el = $( element );
 		this._init( options );
 		
 	};
 	
-	$.Gallery.defaults 		= {
-		current		: 0,	// index of current item
-		autoplay	: false,// slideshow on / off
-		interval	: 2000  // time between transitions
+	$.Gallery.defaults = {
+		current	: 0,	// index of current item
+		autoplay : false,// slideshow on / off
+		interval : 2000  // time between transitions
     };
 	
-	$.Gallery.prototype 	= {
-		_init 				: function( options ) {
+	$.Gallery.prototype = {
+		_init : function( options ) {
 			
-			this.options 		= $.extend( true, {}, $.Gallery.defaults, options );
+			this.options = $.extend( true, {}, $.Gallery.defaults, options );
 			
 			// support for 3d / 2d transforms and transitions
 			this.support3d		= Modernizr.csstransforms3d;
