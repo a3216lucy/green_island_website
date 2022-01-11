@@ -1,51 +1,100 @@
-*{
-   margin:0;
-   padding:0;
+* {
+  font-family: "Fjalla One",'Noto Sans CJK TC';
+  padding: 0;
+  margin: 0;
 }
-#nav{
-	width:auto;
-  height:55px;
-  background: #C4C4C4;
- dispaly:block;
-  position:absolutely;
+.title_area {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  color: white;
+  font-size: 30px;
+  font-family:"Fjalla One",'Noto Sans CJK TC';
 }
-.dropdownmenu ul, .dropdownmenu li {
-	margin: 0;
-	padding: 0;
+hr {
+  width: 100px;
+  margin-left: 0;
+  border: none;
+  border-bottom: solid 2px #B99362;
+}
+svg {
+  height: 80vh;
+  margin-left: 17%;
+  margin-top: 7%;
+}
+body {
+  background-color: #607766;
+  scroll-behavior: smooth;
+}
+
+path {
+  stroke: white;
+  fill: transparent;
+  transition: 0.5s;
+  cursor: pointer;
+}
+path:hover {
+  fill: #B99362;
+  transform: translate(-5px, -5px);
+}
+h1 {
+  margin-top: 15%;
+  padding: 0;
+  font-size: 60px;
+}
+.forcast h2,
+.forcast h4,
+.forcast h5 {
+  margin: 0;
+  line-height: 50px;
+}
+.forcast h2 {
+  margin-top: 10px;
+}
+
+#nav {
+  width: auto;
+  height: 55px;
+  background: #c4c4c4;
+  dispaly: block;
+  position: absolutely;
+}
+.dropdownmenu ul,
+.dropdownmenu li {
+  margin: 0;
+  padding: 0;
 }
 .dropdownmenu ul {
-  float:right;
-	background: gray;
-	list-style: none;
+  float: right;
+  background: gray;
+  list-style: none;
 }
 .dropdownmenu li {
-	float: left;
-	position: relative;
-	width:auto;
-  
+  float: left;
+  position: relative;
+  width: auto;
 }
 .dropdownmenu a {
-	background: #C4C4C4;
-	color: #FFFFFF;
-	display: block;
-	font: bold 15px/25px sans-serif;
-	padding: 15px 25px;
-	text-align: center;
-	text-decoration: none;
-	-webkit-transition: all .25s ease;
-	-moz-transition: all .25s ease;
-	-ms-transition: all .25s ease;
-	-o-transition: all .25s ease;
-	transition: all .25s ease;
+  background: #c4c4c4;
+  color: #ffffff;
+  display: block;
+  font: bold 15px/25px sans-serif;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.dropdownmenu li a.active {
+  background: #c4c4c4;
 }
 .dropdownmenu li:hover a {
-	background: #607766;
-  opacity:70%;
+  background: #607766;
+  opacity: 70%;
 }
-#map{
-  padding-top:200px;
-  padding-left:100px;
-width:75%;
-  height:75%;
-}
+
+
 

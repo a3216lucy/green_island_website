@@ -3,30 +3,20 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>Green Island</title>
+        <title>Green Island Website</title>
         <link rel="shortcut icon" type="image/x-icon" href="https://i.imgur.com/8QvaOKO.png">
         <link rel=stylesheet type="text/css" href="css/reset.css">
         <link rel=stylesheet  href="css/font-awesome.min.css">
         <link rel=stylesheet type="text/css" href="css/intro.css">
-        <!--        <link rel=stylesheet type="text/css" href="css/practice.css">-->
         <link rel="stylesheet" href="css/slide_intro.css">
+        <link rel="stylesheet" href="css/slide_intro1.css">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
         <script>
-
-            $(function(){
-                $('#typo .introduction')
-                    .css( 'opacity','0')
-                    .on('mouseover',function(){
-                    $("#typo .introduction").fadeIn(300);
-                    $('#typo .introduction').animate({
-                        opacity:'100'
-                    },
-                                                     500,
-                                                     'swing'
-                                                    );
-                });
-            });
+            jQuery(function ($) {
+                var slider = $('.mis-stage').miSlider();
+            }); 
 
         </script>
     </head>
@@ -37,7 +27,7 @@
                 <div class="nav">
                     <nav class="menu">
                         <ul>
-                          <li ><a href=index.html>HOME</a></li>
+                            <li ><a href=index.html>HOME</a></li>
                             <li><a href=intro.html>INTRO</a></li>
                             <li><a href=info.html>INFO</a></li>
                         </ul>
@@ -68,8 +58,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slide_buttons">
-                        </div>  
+                        <!--
+<div class="slide_buttons">
+</div>  
+-->
                     </div><!-- End // .slider -->
 
                     <div class="text_outer">
@@ -99,11 +91,14 @@
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
                 <script  src="js/slide_intro.js"></script>
                 <div style="clear:both;"></div>
+
                 <div class="section2">
+                    <h2 class="pp">其他</h2>
+                    <iframe class="iframe1" src='slide_intro2.html' frameborder="0" width='1000px' height='500' scrolling="no"></iframe>
                 </div>
             </div>
             <div class="footer">
-                <p class=footer_text>copyright&nbsp;©&nbsp;&nbsp;2018&nbsp;Kimi.&nbsp;&nbsp;All&nbsp;rights&nbsp;reserved.</p>
+                <p class=footer_text>copyright&nbsp;©&nbsp;&nbsp;2020&nbsp;Kimi.&nbsp;&nbsp;All&nbsp;rights&nbsp;reserved.</p>
             </div>
         </div>
     </body>

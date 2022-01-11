@@ -5,66 +5,51 @@ html, body {
     width: 100%;
 }
 
-.slider3 {
+.slider8 {
     padding-top:20px;
     padding-left: 50px;
     margin: auto;
     max-width: 540px;
 }
 
-.slide_viewer3 {
+.slide_viewer8 {
     height: 200px;
     overflow: hidden;
     position: relative;
 }
 
-.slide_group3 {
+.slide_group8{
     height: 100%;
     position: relative;
     width: 100%;
 }
 
-.slide3 {
+.slide8 {
     display: none;
     height: 180px;
     position: absolute;
     width: 250px;
 }
 
-.slide3:first-child {
+.slide8:first-child {
     display: block;
 }
 
-.slide3:nth-of-type(1) {
-    background-image:url("/img/20180818-IMG_2508.jpg");
+.slide8:nth-of-type(1) {
+    background-image:url("/img/20180818-IMG_2521.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.slide3:nth-of-type(2) {
-    background-image:url("/img/20180818-IMG_2495.jpg");
+.slide8:nth-of-type(2) {
+    background-image:url("/img/20180818-IMG_2514.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.slide3:nth-of-type(3) {
-    background-image:url("/img/20180818-IMG_2486.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.slide_buttons3 {
-    margin-top: -15px;
-    left: 0;
-    position: absolute;
-    right: 0;
-    text-align: center;
-}
-
-a.slide_btn3 {
+a.slide_btn8 {
     color: #CECEB9;
     font-size: 42px;
     margin: 0 0.175em;
@@ -75,17 +60,17 @@ a.slide_btn3 {
     transition: all 0.4s ease-in-out;
 }
 
-.slide_btn3.active, .slide_btn3:hover {
+.slide_btn8.active, .slide_btn8:hover {
     color: #474544;
     cursor: pointer;
 }
-.prev3{
+.prev8{
     margin-left:0px;
 }
-.next3{
+.next8{
     margin-right:60px;
 }
-.directional_nav3 {
+.directional_nav8 {
     height: 200px;
     margin: 0 auto;
     max-width: 940px;
@@ -93,7 +78,7 @@ a.slide_btn3 {
     top: -340px;
 }
 
-.previous_btn3 {
+.previous_btn8 {
     bottom: 0;
     left: 143px;
     margin-top:250px;
@@ -101,7 +86,7 @@ a.slide_btn3 {
     top: 0;
 }
 
-.next_btn3 {
+.next_btn8 {
     bottom: 0;
     margin-top:250px;
     position: absolute;
@@ -109,7 +94,7 @@ a.slide_btn3 {
     top: 0;
 }
 
-.previous_btn3, .next_btn3 {
+.previous_btn8, .next_btn8 {
     cursor: pointer;
     height: 65px;
     opacity: 0.5;
@@ -121,27 +106,27 @@ a.slide_btn3 {
     width: 65px;
 }
 
-.previous_btn3:hover, .next_btn3:hover {
+.previous_btn8:hover, .next_btn8:hover {
     opacity: 1;
 }
 
 @media only screen and (max-width: 767px) {
-    .previous_btn3 {
+    .previous_btn8 {
         left: 160px;
     }
-    .next_btn3 {
+    .next_btn8 {
         right: 100px;
     }
 }
 
-#dialogouter3{
+#dialogouter8{
     z-index: 20;
     top:0;
     left:0;
     height:100%;
     width:100px;
 }
-#a_dialog3{
+#a_dialog8{
     margin-left: 800px;
     margin-top:200px;
     display:block;
@@ -154,44 +139,44 @@ a.slide_btn3 {
     z-index: 20;
     position: absolute;
 }
-.pictext3_1{
+.pictext8_1{
     padding-top:19px;
     font-family:'Noto Sans CJK TC';
     font-weight: bold;
     font-size: 15px;
 }
-.pictext3{
+.pictext8{
     font-family:'Noto Sans CJK TC';
     margin-top: -180px;
-    padding-left: 80px;
+    padding-left: 70px;
     font-size: 13px;
     text-align: center;
     letter-spacing: 2px;
     position: absolute;
     line-height:20px;
 }
-#openDialog3{
+#openDialog8{
     z-index: 999;
-    margin-left: 370px;
-    margin-top:260px;
+    margin-left: 420px;
+    margin-top:200px;
     position: absolute;
     color:#F7E6DE;
     font-size:25px;
 }
-#openDialog3:hover{
+#openDialog8:hover{
     z-index: 9999;
     color:#919191;
     cursor: pointer; 
 }
-#closeDialog3{
+#closeDialog8{
     position: absolute;
     padding-top: 6px;
     padding-left:320px;
     font-size:30px;
     z-index: 9999;
-    cursor: pointer; 
+     cursor: pointer; 
 }
-.prev3, .next3 {
+.prev8, .next8 {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -204,22 +189,22 @@ a.slide_btn3 {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
 }
-.prev3{
+.prev8{
     margin-left:-125px;
 }
-.next3{
+.next8{
     margin-right:50px;
 }
 /* Position the "next button" to the right */
-.next3 {
+.next8 {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev3:hover, .next3:hover {
+.prev8:hover, .next8:hover {
     background-color: rgba(0,0,0,0.8);
 }
 @media only screen and (max-width: 300px) {
-    .prev3, .next3 {font-size: 11px}
+    .prev8, .next8 {font-size: 11px}
 }

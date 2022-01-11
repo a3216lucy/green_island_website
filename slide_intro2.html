@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>3D Gallery with CSS3 and jQuery</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="3D Gallery with CSS3 and jQuery" />
+        <meta name="keywords" content="3d, gallery, jquery, css3, auto, slideshow, navigate, mouse scroll, perspective" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo1.css" />
+        <link rel="stylesheet" type="text/css" href="css/style1.css" />
+        <script type="text/javascript" src="js/modernizr.custom.53451.js"></script>
+       
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                
+            </header>
+            <section id="dg-container" class="dg-container">
+          
+                <div class="dg-wrapper">
+                    <a href="#"><img src="/img/20180818-IMG_2806.jpg" alt="image01"  height= "316px" width=" 481px" style="background-repeat: no-repeat; background-position: center; background-size: cover;" ><div>海景</div></a>
+                    <a href="#"><img src="/img/20180819-IMG_2830.jpg" alt="image02" height= "316px" width=" 481px" style="background-repeat: no-repeat; background-position: center; background-size: cover;"><div>山洞</div></a>
+                    <a href="#"><img src="/img/20180819-IMG_2837.jpg" alt="image03" height= "316px" width=" 481px" style="background-repeat: no-repeat; background-position: center; background-size: cover;"><div>公路</div></a>
+                    <a href="#"><img src="/img/20180819-IMG_2895.jpg" alt="image04" height= "316px" width=" 481px" style="background-repeat: no-repeat; background-position: center; background-size: cover;"><div>成群的山羊</div></a>
+                    <a href="#"><img src="/img/20180819-IMG_2889.jpg" alt="image05" height= "316px" width=" 481px" style="background-repeat: no-repeat; background-position: center; background-size: cover;"><div>山羊</div></a>
+                </div>
+                <!--nav>	
+<span class="dg-prev">&lt;</span>
+<span class="dg-next">&gt;</span>
+</nav-->
+            </section>
+        </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.gallery.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('#dg-container').gallery({
+                    autoplay	:	true
+                });
+            });
+        </script>
+    </body>
+</html>

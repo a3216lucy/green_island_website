@@ -1,314 +1,352 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Green Island Website</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://i.imgur.com/8QvaOKO.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+TC"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .whole {
+        background-color: #607766;
+      }
+      .fixed {
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .page-header {
+        width: 100%;
+        min-width: auto;
+      }
+      .page-header {
+        opacity: 0.9;
+        z-index: 30;
+        position: fixed;
+        top: -35;
+        -webkit-transition: top 0.25s;
+        transition: top 0.25s;
+      }
+      .page-header-clone > .nav {
+        margin: auto;
+      }
+      .page-header-clone.visible {
+        top: 0;
+      }
+      .page-header-clone:hover {
+        opacity: 1;
+      }
+      .nav {
+        width: 100%;
+        height: 50px;
+        background: #b2b2b2;
+        position: absolute;
+      }
+      .page-header > .nav {
+        margin: auto;
+      }
+      .text1 {
+        font-family: "Fjalla One", "Noto Sans CJK TC";
+        font-size: 17px;
+        font-weight: 600;
+        letter-spacing: 5px;
+        padding-left: 550px;
+        margin-top: -60px;
+        word-spacing: 10px;
+        text-anchor: middle;
+        position: absolute;
+      }
+      .text1:hover {
+        font-family: "Fjalla One", "Noto Sans CJK TC";
+        font-size: 19px;
+        font-weight: 600;
+        letter-spacing: 5px;
+        padding-left: 550px;
+        margin-top: -60px;
+        word-spacing: 10px;
+        text-anchor: middle;
+        position: absolute;
+      }
+      .menu ul,
+      .menu li {
+        margin: 0;
+        padding: 0;
+      }
+      .menu ul {
+        float: right;
+        background: #b2b2b2;
+        list-style: none;
+      }
+      .menu li {
+        float: left;
+        position: relative;
+        width: auto;
+      }
+      .menu a {
+        background: #b2b2b2;
+        color: #ffffff;
+        display: block;
+        font: bold 13px/20px "Noto Sans TC", Open Sans, "Noto Sans CJK TC thin",
+          sans-serif;
+        letter-spacing: 1.5px;
+        padding: 15px 10px;
+        text-align: center;
+        text-decoration: none;
+        -webkit-transition: all 0.25s ease;
+        -moz-transition: all 0.25s ease;
+        -ms-transition: all 0.25s ease;
+        -o-transition: all 0.25s ease;
+        transition: all 0.25s ease;
+      }
+      .menu li:hover a {
+        background: #607766;
+        opacity: 70%;
+      }
+      .information {
+        font-family: "Fjalla One", "Noto Sans CJK TC";
+        width: 150px;
+        height: 30px;
+        font-size: 35px;
+        padding-left: 420px;
+        padding-top: 100px;
+        color: white;
+      }
+      #p_outer {
+        width: 450px;
+        line-height: 50px;
+        float: left;
+        margin-top: 25px;
+      }
+      #outer {
+        width: 350px;
+        overflow: hidden;
+        position: relative;
+        float: left;
+        margin-left: 110px;
+        margin-top: 25px;
+      }
+      .pic1 {
+        width: 350px;
+        height: 270px;
+        padding-top: 40px;
+      
+        text-align: center;
+        transform: translateY(0px);
+      }
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Green Island</title>
-        <link rel="shortcut icon" type="image/x-icon" href="https://i.imgur.com/8QvaOKO.png">
-        <link rel=stylesheet type="text/css" href="css/reset.css">
-        <style>
-            *{
-                margin:0;
-                padding:0;
-            }
-            .whole{
-                background-color: #607766;
-            }
-            .fixed{
-                width:1000px;
-                margin-left:auto;
-                margin-right:auto;  
-            }
-            .page-header{
-                width:100%;
-                min-width:auto;
-            }
-            .page-header{
-                opacity:0.9;
-                z-index: 30;
-                position: fixed;
-                top:-35;
-                -webkit-transition: top 0.25s;
-                transition: top 0.25s;
-            }
-            .page-header-clone > .nav{
-                margin: auto;
-            }
-            .page-header-clone.visible{
-                top:0;
-            }
-            .page-header-clone:hover{
-                opacity: 1;
-            }
-            .nav{
-                width:1201px;
-                height:50px;
-                background: #C4C4C4;
-                position:absolute;
-            }
-            .page-header > .nav{
-                margin:auto;   
-            }
-            .text1{
-                font-family:'Ubuntu','Rubik',sans-serif;
-                font-size:17px;
-                font-weight:600;
-                letter-spacing:5px;
-                padding-left:550px;
-                margin-top:-60px;
-                word-spacing: 10px;
-                text-anchor:middle; 
-                position:absolute;
-            }
-            .text1:hover{
-                font-family:'Ubuntu','Rubik',sans-serif;
-                font-size:19px;
-                font-weight:600;
-                letter-spacing:5px;
-                padding-left:550px;
-                margin-top:-60px;
-                word-spacing: 10px;
-                text-anchor:middle; 
-                position:absolute;
-            }
-            .menu ul, .menu li {
-                margin: 0;
-                padding: 0;
-            }
-            .menu ul {
-                float:right;
-                background:  #C4C4C4;
-                list-style: none;
-            }
-            .menu li {
-                float: left;
-                position: relative;
-                width:auto;
+      .p1 {
+        font-family: "Fjalla One", "Noto Sans CJK TC";
+        padding-left: 50px;
+        padding-top: 25px;
+        font-weight: bold;
+        font-size: 19px;
+        letter-spacing: 5px;
+        color: white;
+      }
 
-            }
-            .menu a {
-                background: #C4C4C4;
-                color: #FFFFFF;
-                display: block;
-                font: bold 13px/20px Open Sans,Noto Sans CJK TC thin,sans-serif;
-                letter-spacing:1.5px;
-                padding: 15px 10px;
-                text-align: center;
-                text-decoration: none;
-                -webkit-transition: all .25s ease;
-                -moz-transition: all .25s ease;
-                -ms-transition: all .25s ease;
-                -o-transition: all .25s ease;
-                transition: all .25s ease;
-            }
-            .menu li:hover a {
-                background: #607766;
-                opacity:70%;
-            }
-            .information{
-                font-family:'Goldin Light','Noto Sans CJK TC';
-                width:150px;
-                height:30px;
-                font-size: 35px;
-                padding-left:420px;
-                padding-top:100px;
-                color: white;
-            }
-            #p_outer{
-                width:450px;
-                line-height:50px;
-                float:left;
-                margin-top:25px;
-            }
-            #outer{
-                width:350px;
-                overflow: hidden;
-                position: relative;
-                float:left;
-                margin-left:110px;
-                margin-top: 25px;
-            }
-            .pic1{
-                width:350px;
-                height:270px;
-                padding-top:40px;
-                padding-bottom: 80px;
-                text-align: center;
-                transform:translateY(0px);
-            }
-
-            .p1{
-                font-family:'Noto Sans CJK TC';
-                padding-left:50px;
-                padding-top:25px;
-                font-weight: bold;
-                font-size: 19px;
-                letter-spacing: 5px;
-                color: white;
-            }
-            .p2{
-                font-family:'Noto Sans CJK TC DemiLight';
-                padding-left:50px;
-                font-size: 15px;
-                padding-top:10px;
-                letter-spacing:7px;
-                line-height: 24px;
-                color: white;
-            }
-            #p3{
-                font-family:'Noto Sans CJK TC';
-                margin-left:-250px;
-                padding-top:75px;
-                font-weight: bold;
-                font-size: 19px;
-                letter-spacing: 5px;
-                color: white;
-            }
-            .input{
-                margin-top: -15px;
-                margin-left:-200px;
-            }
-            .p4{
-                font-family:'Noto Sans CJK TC';
-                margin-left:-250px;
-                margin-top: -16px;
-                font-size: 12px;
-                color: white;
-                position: absolute;
-            }
-            .p5{
-                font-family:'Noto Sans CJK TC';
-                margin-left:-250px;
-                margin-top: 17px;
-                font-size: 12px;
-                color: white;
-                position: absolute;
-            }
-            .buttom4{
-                border: solid 1px white;
-                background-color: #607766;
-                opacity:78%;
-                width:40px;
-                height:30px;
-                font-family: 'Noto Sans CJK TC DemiLight';
-            }
-            .footer{
-                display:block;
-                background-color:#C4C4C4;
-                width:auto;
-                height:25px;
-                opacity:70%;
-                margin-top:80px;
-            }
-            .footer_text{
-                font-family:'Ubuntu','Rubik',sans-serif;
-                padding-top:6px;
-                font-size:12px;
-                text-align: center;
-                color:white;
-            }
-
-        </style>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script>
-            
-             $(function(){
-            $('.page-header').each(function () {
-                var $window=$(window),
-                    $header=$(this),
-                    headerClone=$header.contents().clone();
-                $headerCloneContainer=$('<div class="page-header-clone"></div>'),
-                    threshold=$header.offset().top+$header.outerHeight();
-                $headerCloneContainer.append($headerClone);
-                $headerCloneContainer.appendTo('body');
-                $window.on('scroll',$.throttle(1000/15,function(){
-                    if($window.scrollTop()>threshold){
-                        $headerCloneContainer.addClass('visible');
-                    }else{
-                        $headerCloneContainer.removeClass('visible');
-                    }
-                }));
-                $window.trigger('scroll');
-            });
-            });   
-     
-            
-            
-   $(document).ready(function () {
-
-  $('#bottom4').click(function (){
-
-  var querystring = $(this).serialize(); 
-  alert(querystring);
-
-  $.ajax({         
-	url: 'infodata.php',         
-	cache: false,         
-	dataType: 'html',             
-	type:'GET',         
-	data: { 
-		email: $('#email').val(),
-		text: $('#text').val()
-	},  
-	data: querystring
-   });
-});          
-            
-
-            function getData() {
-                var result="";
-                result += document.getElementsByName('textarea')[0].value + "<br>";
-         
-     }
-        </script>
-    </head>
-    <body>
-        <link rel="shortcut icon" type="image/x-icon" href="https://i.imgur.com/8QvaOKO.png">
-        <div class="whole">
-            <header class="page-header" role="banner">
-                <div class="nav">
-                    <nav class="menu">
-                        <ul>
-                             <li ><a href=index.html>HOME</a></li>
-                            <li><a href=intro.html>INTRO</a></li>
-                            <li><a href=info.html>INFO</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <br>
-            </header>
-            <div class="fixed">
-                <h2 class="information" >相關資訊</h2>
-                <div id="outer">
-                    <img src="modified/20180819-IMG_2951.jpg" alt="" class="pic1">
-                </div>
-                <div id=p_outer>
-                    <p class="p1">怎麼去</p>
-                    <p class="p2">1、搭船<br>
-                        到台東 富岡漁港買船票，來回票價<br>
-                        大約八百左右，單程搭乘時間約50<br>
-                        分鐘。
-                        <br><br>
-                        2、搭飛機<br>
-                        到台東 航空站搭乘飛機，票價價格<br>
-                        較高一點，將近一千左右，單程時<br>
-                        間約20分鐘，較為迅速。</p>
-                    <p id="p3">聯繫我們</p>
-                    <p class="p4">信箱</p>
-                    <p class="p5">留言</p>
-                    <div class="input">
-                        <input type="email" size="70"  id="email" placeholder=" Email"/><br>
-                        <textarea  style="width:497px;height:70px;" id="text" type="text" placeholder=" Message" ></textarea><br>
-                        <input type="submit" class="buttom4"  id="bottom4" onclick="getData()" value="提交"/>
-                    </div>
-                </div>
-                <div style="clear:both;"></div>
-            </div>
-            <div class="footer">
-                <p class=footer_text>copyright&nbsp;©&nbsp;&nbsp;2018&nbsp;Kimi.&nbsp;&nbsp;All&nbsp;rights&nbsp;reserved.</p>
-            </div>
-
+      .p2 {
+        font-family: "Noto Sans TC", "Noto Sans CJK TC DemiLight";
+        padding-left: 50px;
+        font-size: 15px;
+        padding-top: 10px;
+        letter-spacing: 7px;
+        line-height: 24px;
+        color: white;
+      }
+      .p3 {
+        font-family: "Fjalla One", "Noto Sans CJK TC";
+        font-size: 35px;
+        margin-left: -260px;
+        position: absolute;
+        color: white;
+        margin-top: 120px;
+        display: inline;
+        border: 3.5px solid #222;
+        border-radius: 5px;
+        padding: 45px;
+      }
+      .form {
+        text-align: left; 
+        padding-top: 100px;
+      }
+      form .fields {
+        display: flex;
+      }
+      form .fields,
+      form .field {
+        height: 45px;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      form .textarea {
+        height: 80px;
+        width: 100%;
+      }
+      form .name {
+        margin-right: 20px;
+      }
+      form .email {
+        margin-left: 20px;
+      }
+      form .field input,
+      form .textarea textarea {
+        height: 100%;
+        width: 100%;
+        border: 1px solid #b6b1b1;
+        border-radius: 6px;
+        outline: none;
+        padding: 0 15px;
+        font-size: 17px;
+        font-family: "Poppins", sans-serif;
+      }
+      form .textarea textarea {
+        padding-top: 10px;
+        resize: none;
+      }
+      form .button {
+        height: 47px;
+        width: 140px;
+      }
+      form .button button {
+        height: 100%;
+        width: 100%;
+        border: 2px solid #b2b2b2;
+        background: #b2b2b2;
+        color: white;
+        font-size: 17px;
+        font-weight: 500;
+        border-radius: 6px;
+        margin-top: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      form .button button:hover {
+        color: #b2b2b2;
+        background: none;
+      }
+      .footer {
+        display: block;
+        background-color: #b2b2b2;
+        width: auto;
+        height: 25px;
+        opacity: 70%;
+        margin-top: 80px;
+      }
+      .footer_text {
+        font-family: "Fjalla One", "Noto Sans CJK TC";
+        padding-top: 6px;
+        font-size: 12px;
+        text-align: center;
+        color: white;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      $(function () {
+        $(".page-header").each(function () {
+          var $window = $(window),
+            $header = $(this),
+            headerClone = $header.contents().clone();
+          ($headerCloneContainer = $('<div class="page-header-clone"></div>')),
+            (threshold = $header.offset().top + $header.outerHeight());
+          $headerCloneContainer.append($headerClone);
+          $headerCloneContainer.appendTo("body");
+          $window.on(
+            "scroll",
+            $.throttle(1000 / 15, function () {
+              if ($window.scrollTop() > threshold) {
+                $headerCloneContainer.addClass("visible");
+              } else {
+                $headerCloneContainer.removeClass("visible");
+              }
+            })
+          );
+          $window.trigger("scroll");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://i.imgur.com/8QvaOKO.png"
+    />
+    <div class="whole">
+      <header class="page-header" role="banner">
+        <div class="nav">
+          <nav class="menu">
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="intro.html">INTRO</a></li>
+              <li><a href="info.html">INFO</a></li>
+            </ul>
+          </nav>
         </div>
-    </body>
-
+        <br />
+      </header>
+      <div class="fixed">
+        <h2 class="information">相關資訊</h2>
+        <div id="outer">
+          <img src="/img/20180819-IMG_2951.jpg" alt="" class="pic1" />
+        </div>
+        <div id="p_outer">
+          <p class="p1">怎麼去</p>
+          <p class="p2">
+            1、搭船<br />
+            到台東 富岡漁港買船票，來回票價<br />
+            大約八百左右，單程搭乘時間約50<br />
+            分鐘。
+            <br /><br />
+            2、搭飛機<br />
+            到台東 航空站搭乘飛機，票價價格<br />
+            較高一點，將近一千左右，單程時<br />
+            間約20分鐘，較為迅速。
+          </p>
+          <p class="p3">聯繫<br>我們</p>
+          <form action="#" class="form">
+            <div class="fields">
+              <div class="field name">
+                <input type="text" placeholder="Name" required />
+              </div>
+              <div class="field email">
+                <input type="email" placeholder="Email" required />
+              </div>
+            </div>
+            <div class="field">
+              <input type="subject" placeholder="Subject" required />
+            </div>
+            <div class="field textarea">
+              <textarea
+                cols="30"
+                rows="10"
+                placeholder="Comment ..."
+                required
+              ></textarea>
+            </div>
+            <div class="button">
+              <button type="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+        <div style="clear: both"></div>
+      </div>
+      <div class="footer">
+        <p class="footer_text">
+          copyright&nbsp;©&nbsp;&nbsp;2020&nbsp;Kimi.&nbsp;&nbsp;All&nbsp;rights&nbsp;reserved.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
