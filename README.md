@@ -19,6 +19,11 @@
 <br>
 我希望能呈現的風格，將會主要以圖文排列的方式來展示，利用小動畫的元素來使網頁更加活潑、豐富，盡量設計出一個可以與使用者互動的介面來保持新鮮感；色調方面則是走簡樸風，配上較為鮮豔的照片，來平衡整體的和諧度。
 
+## 介紹
+[Live Demo](https://a3216lucy.github.io/green_island_website/)
+
+<img width="1440" alt="green_island_demo_pic" src="https://user-images.githubusercontent.com/32087302/153383289-2c333be6-edbc-4246-8e79-82fcde56a6ec.png">
+
 ## 附錄
 最初的頁面設計：
 - [01](https://i.imgur.com/MXUNW07.png)
